@@ -3,10 +3,16 @@ import logo from '../../asset/logo.png';
 import './footer.css';
 import { Link } from 'react-router-dom';
 import 'boxicons'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 
 const Footer = () => {
+	useEffect(() => {
+        Aos.init({duration:1000});
+    }, [])
   return (
-    <footer class="footer">
+    <footer class="footer" data-aos="zoom-in-down">
   	 <div class="container">
   	 	<div class="row">
   	 		<div class="footer-col">
