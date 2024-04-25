@@ -1,8 +1,7 @@
 import {BrowserRouter as Router, Routes, Route,} from 'react-router-dom';
 import Layout from './components/layout/Layout';
-import Register from './pages/register/Register';
-import Login from './pages/login/Login';
 import './App.css'
+import Admin from './pages/admin/Admin';
 
 function App() {
   return (
@@ -10,6 +9,7 @@ function App() {
       <Router>
           <Routes>
             <Route path='/*' element={<Layout/>} />
+            <Route path="/admin" element={<Admin />} />
           </Routes>
         </Router>
     </div>

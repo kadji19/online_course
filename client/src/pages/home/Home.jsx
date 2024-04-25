@@ -34,7 +34,7 @@ const Home = () => {
       </section>
       <section className="home_illustration" data-aos="zoom-in-up">
         <div class="card">
-            <div class="image">
+            <div class="card_image">
                 <img src={illustration1} alt="" />
             </div>
             <div class="title">
@@ -45,7 +45,7 @@ const Home = () => {
             </div>
         </div>
         <div class="card">
-            <div class="image">
+            <div class="card_image">
                 <img src={illustration1} alt="" />
             </div>
             <div class="title">
@@ -56,7 +56,7 @@ const Home = () => {
             </div>
         </div>
         <div class="card">
-            <div class="image">
+            <div class="card_image">
                 <img src={illustration1} alt="" />
             </div>
             <div class="title">

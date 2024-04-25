@@ -5,19 +5,23 @@ const cors = require("cors")
 app.use(cors())
 
 
-const userRoute =require('./routes/userRoute')
-const coursRoute = require('./routes/coursRoute')
+const userRoute =require('./student/routes/userRoute')
+const coursRoute = require('./admin/routes/coursRoute')
+const adminRoute = require('./admin/routes/adminRoute')
+const categorieRoute = require('./admin/routes/categorieRoutes')
+/* const categorieRoutes = require('./admin/routes/categorieRoutes') */
+
+
 
 app.use(express.json())
 
 app.use("/files",express.static(path.join(__dirname,"files")))
+app.use('/course',coursRoute)
 app.use("/student",userRoute)
-app.use('/cours',coursRoute)
-app.post("/chat",(req,res)=>{
-    console.log(req.body)
-    res.end("chat route")
-})
+app.use('/admin', adminRoute)
+app.use('/category', categorieRoute)
 
 
 
-app.listen(process.env.port || 5000)
+
+app.listen(process.env.PORT || 5000)

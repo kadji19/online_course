@@ -1,0 +1,122 @@
+
+.login_bloc{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 80%; */
+}
+
+.login{
+    width: 65%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
+}
+
+.form_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 47%;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.form_add{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.input_add{
+    background: #F1F1F3;
+    outline: none;
+    padding: 8px;
+    font-size: 0.95rem;
+    border-radius: 5px;
+    border: #b3b3b370 1px solid;
+
+}
+
+.connect_btn{
+    background-color: #0085FF;
+    margin-top: 15px;
+    display: inline-block;
+    width: 100%;
+    height: 43px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    font-size: 0.8rem;
+/*     margin-bottom: 2rem; */
+    transition: 0.3s;
+}
+
+.login_word{
+    text-align: center;
+    width: 80%;
+}
+
+.testimony{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 52.95%;
+    height: 100%;
+    padding: 10px;
+}
+
+.testimony_text{
+    text-justify: auto;
+    font-size: 13px;
+    color: #565656;
+    margin-left: 4%;
+
+}
+
+.testimony_image{
+    width: 85%;
+    height: 60%;
+
+}
+
+.testimony_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimony_line{
+       width: 1px;
+        height: 70%;
+        background-color: #0085FF;
+        margin: 6px 0;
+}
+
+.login p{
+    text-justify: auto;
+    font-size: 13px;
+    color: #565656;
+    margin-left: 4%;
+}

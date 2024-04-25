@@ -1,0 +1,109 @@
+
+.add_course{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    height: 85%;
+    padding: 20px 0px 0px 0px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
+}
+
+.form_add{
+    width: 75%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.input_add{
+    background: #F1F1F3;
+    outline: none;
+    padding: 8px;
+    font-size: 0.95rem;
+    border-radius: 5px;
+    border: #b3b3b370 1px solid;
+
+}
+
+.add_course_btn{
+    background-color: #0085FF;
+    margin-top: 15px;
+}
+
+/*responsive*/
+
+@media screen and (min-width: 1400px){
+
+
+  }
+  
+  @media screen and (min-width: 767px) and (max-width: 1023px){
+
+    .form_add{
+        width: 90%;
+        height: 90%;
+    }
+
+    .form{
+        width: 40%;
+        height: 85%;
+    }
+    
+  }
+
+  @media screen and (max-width: 767px){
+
+    .form_add{
+        width: 90%;
+        height: 90%;
+    }
+
+    .form{
+        width: 55%;
+        height: 80%;
+    }
+  }
+
+  @media screen and (max-width: 479px){
+
+    .form_add{
+        width: 90%;
+        height: 90%;
+    }
+
+    .form{
+        width: 75%;
+        height: 80%;
+    }
+
+  }
+/* 
+  @media screen and (max-height: 1400px){
+
+    .form{
+        height: 50%;
+    }
+
+  } */
+

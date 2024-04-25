@@ -1,10 +1,10 @@
-const mysql=require("mysql2")
-
+const mysql = require('mysql2');
+const bcrypt = require("bcrypt")
 const dataBase=mysql.createConnection({
     host:"localhost",
     user:"root",
     password:"",
-    database:"elearning"
+    database:"online_course"
 })
 
 dataBase.connect((err)=>{
@@ -12,6 +12,8 @@ dataBase.connect((err)=>{
         throw(err)
     }
     console.log("dataBase connected")
+
+
 })
 
 module.exports = dataBase 

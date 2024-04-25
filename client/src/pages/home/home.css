@@ -123,14 +123,14 @@
 }
 
 
-.image img{
+.card_image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
    
 }
 
-.image {
+.card_image {
     background-color: #0085FF;
     clip-path: circle();
 }
@@ -144,68 +144,6 @@
 }
 
 /*responsive*/
-/* @media(max-width: 950px){
-
-    .banner_image{
-        width: 80%;
-        height: 70vh;
-    }
-
-    .banner_text{
-        width: 60%;
-        height: 35vh;
-        background-color: #0000002f;
-        position: absolute;
-        top: 50vh;
-        left: 20%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        border-radius: 5px;
-    
-    }
-
-    .banner_text_title{
-        background-color: #fff;
-        text-align: center;
-        padding: 10px;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        width: 65%;
-    }
-    .banner_text_title .title_blue{
-        color: #0085FF;
-    }
-    
-    .title_icon{
-        display: flex;
-        align-items: center;
-        background: #E8F4FF;
-        padding: 8px;
-        border-radius: 5px;
-    
-    }
-    
-    .banner_text_text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: #fff;
-        font-weight: 200;
-        text-align: center;
-    }
-    
-    .text_para{
-        font-size: 22px;
-        font-weight: 300;
-        
-    }
-
-  } */
 
   @media screen and (min-width: 1400px){
 
