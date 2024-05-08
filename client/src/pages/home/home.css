@@ -83,8 +83,12 @@
     padding: 12px;
     border-radius: 5px;
     cursor: pointer;
-    color: #fff;
     font-family: 'Poppins';
+}
+
+.banner_btn{
+    text-decoration: none;
+    color: #fff;
 }
 
 .home_text{

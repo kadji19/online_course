@@ -1,0 +1,388 @@
+.contact_us_bloc{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content: space-around;
+
+
+}
+
+.contact_line{
+    width: 60%;
+    height: 1px;
+    background-color: #23282c9f;
+    margin: 6px 0;
+    
+}
+
+.contact_us_section{
+    width: 70%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+/*     border-bottom: 1PX solid black; */
+}
+
+.contact_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    height: 85%;
+    padding: 10px;
+
+}
+
+.contact_us_tittle{
+    text-justify: auto;
+    font-size: 15px;
+    color: rgb(14, 12, 12);
+    margin-left: 4%;
+
+}
+
+p{
+    line-height: normal;
+    height: 80%px;
+    font-size: 13px;
+
+}
+
+
+.contact_bloc{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.contact_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+/*     box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27); */
+
+}
+
+.formular{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 40%;
+}
+
+.contact_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 40%;
+}
+
+.contact_column_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0px;
+    
+
+
+}
+
+.contact_btn{
+    background-color: #0085FF;
+    display: inline-block;
+    width: 25%;
+    height: 80%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.info_contact{
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.info_contact_div{
+    width: 70%;
+    height: 20%;
+    gap: 5px;
+    border-radius: 8px 8px 8px 8px;
+    opacity: 0px;
+    border: 1px solid #F1F1F3;
+    background: #FCFCFD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+
+.contact_form_add{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact_column_add{
+    width: 95%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-top: 3%;
+
+}
+
+.contact_column_add_msg{
+    display: flex;
+    width: 100%;
+    height: 55%;
+    margin-left: 2%;
+    justify-items: center;
+}
+
+.msg_input{
+    
+    height: 150px; /* Hauteur du textarea */
+    padding: 10px; /* Espacement interne du textarea */
+    font-size: 16px; /* Taille de police du texte dans le textarea */
+    border: 1px solid #ccc; /* Bordure du textarea */
+    border-radius: 5px; /* Bordure arrondie */
+    resize: vertical; /* Permet à l'utilisateur de redimensionner verticalement */
+}
+
+.input_add{
+    width: Fill (309px)px;
+    height: Hug (68px)px;
+    padding: 28px 20px 24px 20px;
+    gap: 12px;
+    border-radius: 5px;
+    border: whitesmoke 1px solid;
+    opacity: 0px;
+    
+}
+
+.formular .cont{
+    background: #FCFCFD;
+}
+
+/* .input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+} */
+
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .contact_line {
+        width: 70%;
+    }
+    .contact_us_section {
+        width: 80%;
+    }
+    .contact_text {
+        width: 70%;
+        padding: 15px;
+    }
+    .contact_bloc {
+        width: 45%;
+    }
+    .info_contact {
+        width: 40%;
+    }
+    .info_contact_div {
+        width: 80%;
+    }
+    .msg_input {
+        height: 180px; /* Ajuster la hauteur du textarea */
+        padding: 10px; /* Ajuster l'espacement interne du textarea */
+        font-size: 16px; /* Ajuster la taille de police du textarea */
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .contact_us_bloc {
+        height: 180vh;
+        padding: 20px;
+    }
+    .contact_line {
+        width: 90%;
+    }
+    .contact_us_section {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: 15%;
+    }
+    .contact_text {
+        width: 90%;
+        padding: 10px;
+        text-align: center;
+    }
+    .contact_bloc {
+        width: 100%;
+    }
+    .contact_form {
+        flex-direction: column;
+        height: 84%;
+    }
+    .formular{
+        width: 100%;
+        height: 55%;
+        
+    }
+
+    .contact_form_add{
+        width: 90%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .contact_column_add{
+        width: 95%;
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+        margin-top: 3%;
+    
+    }
+    .info_contact {
+        width: 90%;
+        height: 45%;
+    }
+    .info_contact_div {
+        width: 70%;
+        height: 30%;
+        margin-bottom: 10px;
+    }
+    .msg_input {
+        height: 150px; /* Ajuster la hauteur du textarea */
+        padding: 8px; /* Ajuster l'espacement interne du textarea */
+        font-size: 14px; /* Ajuster la taille de police du textarea */
+    }
+    .contact_column_btn {
+        opacity: 1;
+        margin-top: 10px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 479px) {
+    .contact_us_bloc {
+        height: 190vh;
+        padding: 20px;
+    }
+    .contact_line {
+        width: 100%;
+    }
+    .contact_us_section {
+        width: 100%;
+    }
+    .contact_text {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    .contact_bloc {
+        width: 100%;
+    }
+    .contact_form {
+        flex-direction: column;
+        height: 84%;
+        width: 100%;
+    }
+    .formular{
+        width: 100%;
+        height: 70%;
+        
+    }
+
+    .contact_row{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 55%;
+    }
+    
+    .contact_column{
+        height: 30%;
+    }
+
+    .contact_form_add{
+        width: 95%;
+        height: 20%;
+    }
+    
+    .contact_column_add{
+        width: 95%;
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+        margin-top: 3%;
+    
+    }
+    .info_contact {
+        width: 90%;
+        height: 30%;
+    }
+    .info_contact_div {
+        width: 70%;
+        height: 30%;
+        margin-bottom: 10px;
+    }
+    .msg_input {
+        height: 120px; /* Ajuster la hauteur du textarea */
+        padding: 6px; /* Ajuster l'espacement interne du textarea */
+        font-size: 12px; /* Ajuster la taille de police du textarea */
+    }
+    .contact_column_btn {
+        opacity: 1;
+        margin-top: 10px;
+    }
+}

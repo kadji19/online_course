@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import "./login.css"
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import student_1 from '../../asset/étu.jpeg'
+import student_1 from '../../asset/learn6.jpg'
+
 
 const Login = () => {
   const [mdp, setMdp] = useState("")
@@ -28,20 +29,6 @@ const Login = () => {
 
   <div className='login_bloc'>
     <section className="login">
-    <div className="testimony">
-
-      <div className='testimony_text'>
-      <h1>Acquérir des compétences qui ont de l'avenir de nos jours!</h1><br />
-
-        <div className='testimony_text_2'><p>La technologie et le monde du travail évoluent rapidement. Avec nous, vous êtes plus rapide.
-        Obtenez les compétences pour atteindre vos objectifs et rester compétitif.</p></div>
-      </div>
-      <div className='testimony_image'>
-        <img className='testimony_img' src= {student_1} alt="" />
-      </div>
-
-    </div>
-    <div className='testimony_line'></div>
     <form 
     onSubmit={(e)=>{
       handleSubmit(e)
@@ -50,13 +37,13 @@ const Login = () => {
 
 <div className="log-card">
   <br />
-  <h1>Login</h1>
+  <h1>Connexion</h1>
 </div> 
 <div className='login_word'>
   <p>Content de vous revoir! Veuillez vous connecter pour accéder à votre compte.</p>
 </div><br /><br />
 
-<div className="form_add">
+<div className="form_add_login">
 <div className="input">
   <label>Email</label>
   <input 
@@ -76,10 +63,25 @@ const Login = () => {
 </div>
 
 <button type="submit" className="connect_btn">Se connecter</button>
-<span>ou</span>
-  <p>Pas de compte? <a href=""><strong>créez-en.</strong></a> </p>
   </div>
+  <div className="ver_login">
+<span>ou</span>
+<p>Pas de compte? <a href=""><strong>créez-en.</strong></a> </p>
+</div>
 </form>
+<div className="testimony">
+
+{/* <div className='testimony_text'>
+<h1>Acquérir des compétences qui ont de l'avenir de nos jours!</h1><br />
+
+  <div className='testimony_text_2'><p>La technologie et le monde du travail évoluent rapidement. Avec nous, vous êtes plus rapide.
+  Obtenez les compétences pour atteindre vos objectifs et rester compétitif.</p></div>
+</div> */}
+  <img className='testimony_img' src= {student_1} alt="" />
+{/* <div className='testimony_image'>
+</div> */}
+
+</div>
     </section>      
   </div>
   )

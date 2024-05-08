@@ -26,7 +26,7 @@ const AddCourse = () => {
   axios.post("http://localhost:5000/course/add",formData)
   .then((res)=>{
   console.log(res)
-  /* navigate('/*') */
+  navigate('/')
 })
 .catch((error)=>{
   console.log(error)

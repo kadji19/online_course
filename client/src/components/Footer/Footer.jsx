@@ -12,7 +12,7 @@ const Footer = () => {
         Aos.init({duration:1000});
     }, [])
   return (
-    <footer class="footer" data-aos="zoom-in-down">
+    <footer class="footer" /* data-aos="zoom-in-down" */>
   	 <div class="container">
   	 	<div class="row">
   	 		<div class="footer-col">

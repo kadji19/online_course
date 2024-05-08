@@ -48,6 +48,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: start;
+/*     background-color: #313131; */
 }
 
 .course_des_title{
@@ -78,3 +79,27 @@
     color: #313131;
 }
 
+
+
+
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .course {
+        width: 85%;
+    }
+    .course_detaill {
+        height: 30vh;
+    }
+    .course_video {
+        width: 40%;
+    }
+    .course_des {
+        width: 55%;
+    }
+    .span_title {
+        font-size: 32px;
+    }
+    .des_p {
+        font-size: 20px;
+    }
+}

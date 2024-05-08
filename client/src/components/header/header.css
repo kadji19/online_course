@@ -53,6 +53,10 @@ header.sticky{
     color: #24262b;
 }
 
+.d_none{
+    display: none;
+}
+
 .btn_header{
     width: 30%;
     display: flex;
@@ -64,6 +68,7 @@ header.sticky{
 .btn_inscrip{
     background: transparent;
     border: 1px solid #0085FF;
+/*     font-family: "Overlock", sans-serif; */
     padding: 12px;
     border-radius: 5px;
     cursor: pointer;
@@ -72,6 +77,7 @@ header.sticky{
 
 .btn_connex{
     background-color: #0085FF;
+/*     font-family: "Overlock", sans-serif; */
     border: none;
     padding: 12px;
     font-family: 'Poppins';

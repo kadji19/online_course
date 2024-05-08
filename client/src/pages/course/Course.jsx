@@ -26,7 +26,7 @@ const Course= ({ categoryId }) => {
      .catch(error => {
         console.error('Error fetching courses by category:', error);
       });
-  }, []);
+  }, [categoryId]);
   return (
     <div className='comp_course'>
       <h2>Cours de la catégorie</h2>

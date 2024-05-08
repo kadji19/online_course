@@ -6,6 +6,7 @@ import illustration3 from '../../asset/illustration3.png'
 import './home.css'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import { Link } from 'react-router-dom'
 const Home = () => {
     useEffect(() => {
         Aos.init({duration:2000});
@@ -25,7 +26,7 @@ const Home = () => {
                 <span className='text_para'>Avec nos cours de conception et de développement en ligne</span>
                 <p>apprenez des experts du secteur et améliorez vos compétences</p>
             </div>
-            <button className="banner_text_btn">Explorez les cours</button>
+            <button className="banner_text_btn"><Link className='banner_btn' to='/login' >Explorez les cours</Link></button>
         </div>
       </section>
       <section className='home_text'>

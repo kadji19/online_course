@@ -3,7 +3,7 @@ import React  from 'react'
 import "./register.css"
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
-import student_2 from '../../asset/étu 1.jpeg'
+import learn from '../../asset/learn8.webp'
 
 const Register = () => {
 
@@ -36,15 +36,15 @@ const Register = () => {
     <section className="register">
     <div className="testimonial">
 
-      <div className='testimonial_text'>
+      {/* <div className='testimonial_text'>
       <h1>Témoignages de nos étudiants</h1><br />
 
         <div className='testimonial_text'><p>La technologie et le monde du travail évoluent rapidement. Avec nous, vous êtes plus rapide.
         Obtenez les compétences pour atteindre vos objectifs et rester compétitif.</p></div>
-      </div>
-      <div className='testimonial_image'>
-        <img className='testimony_img' src= {student_2} alt="" />
-      </div>
+      </div> */}
+        <img testimonial_image className='testimony_img' src= {learn} alt="" />
+      {/* <div className='testimonial_image'>
+      </div> */}
 
     </div>
     <div className='testimonial_line'></div>
@@ -59,23 +59,25 @@ const Register = () => {
   <h1>Inscription</h1>
 </div> 
 <div className='register_word'>
-  <p>Créez un compte pour débloquer des fonctionalités exclusives!</p>
+  <p>Créez un compte pour accéder à vos course !</p>
 </div><br /><br />
 
 <div className="form_add_register">
-<div className="input">
-  <label>Nom: </label>
+<div className="input_register_row">
+<div className="input_reg">
+  <label>Nom</label>
   <input 
   onChange={(e)=>{setLastname(e.target.value)}}
   type="text" minLength="4" className="input_add" autoComplete="off" placeholder='Entrez votre nom'required
   />
-</div>
-<div className="input">
-  <label>Prenom: </label>
+</div> 
+<div className="input_reg">
+  <label>Prenom</label>
   <input 
   onChange={(e)=>{setFirstname(e.target.value)}}
   type="text" minLength="4" className="input_add" autoComplete="off" placeholder='Entrez votre prenom'required
   />
+</div>
 </div>
 
 <div className="input">
@@ -93,9 +95,11 @@ const Register = () => {
    type="password" minLength="4" className="input_add" autoComplete="off" placeholder='Entez votre mot de passe'required/>
 </div>
 
-<button type="submit" className="register_btn">Soumettre</button>
+<button type="submit" className="register_btn">S'inscrire</button>
+<div className="ver_login">
 <span>ou</span>
   <p>Déjà un compte? <a href=""><strong>Connectez-vous.</strong></a> </p>
+</div>
   </div>
 </form>
     </section>      
