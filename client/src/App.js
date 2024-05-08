@@ -1,25 +1,20 @@
-import {BrowserRouter as Router, Routes, Route, useLocation,} from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { AuthProvider } from './Context/AuthContext';
 import Layout from './components/layout/Layout';
-import './App.css'
 import Admin from './pages/admin/Admin';
-import { useLayoutEffect } from 'react';
 
 function App() {
-/*   const { pathname } = useLocation();
-
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]); */
-  
-
   return (
-    <div className='App'>
+    <div className="App">
       <Router>
+        <AuthProvider>
           <Routes>
-            <Route path='/*' element={<Layout/>} />
+            <Route path="/*" element={<Layout />} />
             <Route path="/admin" element={<Admin />} />
           </Routes>
-        </Router>
+        </AuthProvider>
+      </Router>
     </div>
   );
 }

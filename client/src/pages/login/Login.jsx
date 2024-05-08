@@ -3,9 +3,11 @@ import "./login.css"
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import student_1 from '../../asset/learn6.jpg'
+import { useAuth } from '../../Context/AuthContext'
 
 
 const Login = () => {
+  const { login } = useAuth();
   const [mdp, setMdp] = useState("")
   const [email, setEmail] = useState("")
   const navigate = useNavigate()
@@ -18,7 +20,9 @@ const Login = () => {
       axios.post("http://localhost:5000/student/login",data).then((reponse)=>{
       console.log(reponse.data)
       localStorage.setItem("token",reponse.data.accessToken)
+      login(email, mdp);
     navigate("/category")})
+
       .catch((error)=>{
         console.log(error)
       })

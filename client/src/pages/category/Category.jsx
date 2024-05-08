@@ -28,9 +28,9 @@ const Category = ({selectedCategory, setSelectedCategory,setCategoryId}) => {
   
 
   return (
-    <div>
+    <div className='bloc_category'>
       <section className="category">
-        <h2>Catégories</h2>
+        <h2>Catégories de cours</h2>
         <ul className="cat_wrap">
           {categories.map(category => (
             <li 
@@ -45,7 +45,7 @@ const Category = ({selectedCategory, setSelectedCategory,setCategoryId}) => {
           /*       console.log(selectedCategory) */
                  }}
             >
-            <Link to={`/course/${category.id_categorie}`}>{category.libelle}</Link>
+            <Link className='cat_couse_link' to={`/course/${category.id_categorie}`}>{category.libelle}</Link>
             {/*   {category.libelle} */}
 
             </li>
